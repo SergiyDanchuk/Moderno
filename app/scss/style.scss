@@ -103,6 +103,7 @@
     }
 }
 .basket{
+    margin-right: 20px;
     span{
     background-color: $green;
     }
@@ -117,8 +118,7 @@
     }
 }
 .user{
-    margin-right: 20px;
-    margin-left: 25px;
+    margin-right: 25px;
     padding-right: 20px;
     position: relative;
     &::before{
@@ -190,11 +190,12 @@
 }
 .circle__menu{
     position: absolute;
-    top: 62px;
+    top: 61px;
     right: 0;
     border-top: 0px solid #e0e0e0;
     height: 0;
     overflow: hidden;
+    z-index: 1;
     
 }
 .basket__box,
@@ -299,6 +300,10 @@
 }
 .icons-color::before{
     color: $tomato;
+}
+.header__btn-menu,
+.menu__btn{
+    display: none;
 }
 // end header
 
@@ -1153,3 +1158,5 @@ button.icon-unsorted{
     }
 }
 //end product-page
+
+@import 'media';
