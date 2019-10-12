@@ -9,6 +9,8 @@ html{
 html,
 body {
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
     
 }
 body{
@@ -16,7 +18,6 @@ body{
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    overflow-x: hidden;
     color: $text;
 }
 a{
@@ -75,6 +76,8 @@ li{
 .breadcrumbs{
     &__inner{
         padding: 45px 0px 40px;
+        overflow: hidden;
+        width: 1200px;
     }
     &__list{
         li{
